@@ -1,17 +1,17 @@
 # orderCollection
-To make this application up and running we need below components:
-MongoDB
-Tomcat
-JDK 1.8
-Jmeter(For API's unit test with 200 output)
-
-Limitations :
-All values for Width, Length, Height are in inches
-Zip Code - 5 digits long
-Phone number - 10 digits long(No Special character)
-State - US state Only
-
-To start this application please follow below steps:
+To make this application up and running we need below components:  
+MongoDB,  
+Tomcat,  
+JDK 1.8,  
+Jmeter(For API's unit test with 200 output)  
+  
+Limitations :  
+All values for Width, Length, Height are in inches  
+Zip Code - 5 digits long	
+Phone number - 10 digits long(No Special character)		
+State - US state Only	
+	
+To start this application please follow below steps:	
 Restore MongoDB database - orders
 			  Collection - Orders
 			  Collection - Product
