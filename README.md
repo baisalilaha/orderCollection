@@ -7,15 +7,17 @@ __Jmeter(For API's unit test with 200 output)__
   
 Limitations : 	
 --------------
-All values for Width, Length, Height are in inches  
-Zip Code - 5 digits long	
-Phone number - 10 digits long(No Special character)		
-State - US state Only	
+All values for Width, Length, Height are in inches<br>  
+Zip Code - 5 digits long	<br>
+Phone number - 10 digits long(No Special character)<br>		
+State - US state Only	<br>
+
 	
-To start this application please follow below steps:	
-Restore MongoDB database - orders	
-			  Collection - Orders	
-			  Collection - Product	
+To start this application please follow below steps:	<br>
+
+Restore MongoDB database - orders	<br>
+			  Collection - Orders	<br>
+			  Collection - Product	<br>
 			  
 `mongorestore --collection Orders --db orders {Your_machines_path_to_OrderCollection_folder}/orders/Orders.bson`		
 `mongorestore --collection Product --db orders {Your_machines_path_to_OrderCollection_folder}/orders/Product.bson`		
