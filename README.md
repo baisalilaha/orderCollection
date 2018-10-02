@@ -25,15 +25,15 @@ Restore MongoDB database - orders	<br>
 Run below command :	
 	
 `mongo`		<br>
-`use orders`	<br>	
+`use orders;`	<br>	
 `db.createUser( { user: "user", pwd: "pass123", roles: [ "readWrite"] } );` <br>		
 
 Below DB configs has been used in this Application
 		  
-			 `db_host =127.0.0.1` <br>
-			  `db_port =27017`	<br>
-			  `db_username =user`	<br>
-			  `db_password =pass123`	<br>
+			 db_host =127.0.0.1
+			 db_port =27017
+			 db_username =user
+			 db_password =pass123
 
 If your DB user_name,password,host,port is different, replace them in below file --					
 		**src/main/resources/config.properties**		
@@ -67,4 +67,4 @@ Paste below link on browser :
 			
 and .....   voila !!!		
 		
-Any log related to this application is written to the catalina.out file.		
+Any log related to this application is written to the *catalina.out* file.		
