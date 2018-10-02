@@ -161,7 +161,7 @@
 											$('<td></td>').append(x.streetAddress),
 											$('<td></td>').append(x.city),
 											$('<td></td>').append(x.state),
-											$('<td></td>').append(x.zipcode),
+											$('<td></td>').append(x.zipCode),
 											$('<td></td>').append(x.phoneNumber),
 											$('<td></td>').append(x.quantity)).appendTo("#allorders");
 								});
@@ -287,9 +287,9 @@
 			<div id="createOrderDialog" style="display:none; border: 2px solid black; background-color: white; color: black;">
 			  <form id="createOrderForm" method="POST" style="padding: 15px 15px 15px 15px;">
 			    <input type="hidden" id="custprodId" name="id" />
-				  Name:   <input id="custfieldName" type="text" name="recipientName" /><br>
-			      Street: <input id="custfieldStreet" type="text" name="streetAddress" /><br>
-			      City:   <input id="custfieldCity" type="text" name="city" /><br>
+				  Name:   <input id="custfieldName" type="text" required pattern="[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*" name="recipientName" /><br>
+			      Street: <input id="custfieldStreet" type="text" required pattern="\s*\S+(?:\s+\S+){2}" name="streetAddress" /><br>
+			      City:   <input id="custfieldCity" type="text" required pattern="[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*" name="city" /><br>
 				  State: 
 				  <select name="state" input id="custfieldState">
 					    <option value="AL">Alabama</option>
